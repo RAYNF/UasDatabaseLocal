@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".BacaSqlite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/semarang"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:id="@+id/teksjudule"
+            android:background="@drawable/tampil_data"
+            android:textSize="25dp"
+            android:text="Kartu Hasil Studi"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/semarang"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="NIM"
+                android:id="@+id/teksnim"
+                android:layout_marginLeft="5dp"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Nama"
+                android:id="@+id/teksnama"
+                android:textSize="20dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/black"
+                android:layout_below="@id/teksnim"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Jurusan"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@+id/teksnama"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/nimku"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90dp"
+                android:layout_toRightOf="@+id/teksnim"
+                android:text="xxxx"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/namaku"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nimku"
+                android:layout_marginLeft="75dp"
+                android:layout_toRightOf="@+id/teksnama"
+                android:text="xxxxx."
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Teknik Informatika - S1"
+                android:id="@+id/jurusan"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_below="@+id/namaku"
+                android:layout_toRightOf="@+id/teksnama"
+                android:layout_marginLeft="75dp"
+                android:layout_height="wrap_content"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclematakuliah"
+                android:layout_below="@+id/jurusan"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"/>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/ipk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="IPK                          "
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/totalsks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ipk"
+        android:layout_marginLeft="5dp"
+        android:text="TOTAL SKS             "
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/jumlahmatkul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/totalsks"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="0dp"
+        android:text="Jumlah MATKUL     "
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/editipk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90dp"
+        android:layout_toRightOf="@+id/ipk"
+        android:text="3.8"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/editsks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editipk"
+        android:layout_marginLeft="75dp"
+        android:layout_toRightOf="@+id/totalsks"
+        android:hint="sks"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/editjumlahmatkul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editsks"
+        android:layout_marginLeft="75dp"
+        android:layout_toRightOf="@+id/jumlahmatkul"
+        android:hint="jumlah matkul"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+</RelativeLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

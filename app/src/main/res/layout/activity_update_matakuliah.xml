@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".entry_data">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/bagian1"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/teksjudule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_700"
+            android:text="Entry Data KHS"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="NIM             : "
+            android:id="@+id/teksnim"
+            android:layout_below="@+id/teksjudule"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="25dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Nama          :"
+            android:id="@+id/teksnama"
+            android:layout_below="@+id/teksnim"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="25dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Jurusan       :"
+            android:id="@+id/teksjurusan"
+            android:layout_below="@+id/teksnama"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="25dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/nimku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/teksjudule"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@+id/teksnim"
+            android:text="xxxx"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/namaku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/teksnim"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/teksnama"
+            android:text="xxxx"
+            android:textSize="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/jurusanku"
+            android:text="S1-TI"
+            android:layout_toRightOf="@+id/teksjurusan"
+            android:layout_below="@+id/namaku"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="25dp"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/entrydata"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/tekskode"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@color/grey"
+                android:text="Kode"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editkode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tekskode" />
+
+            <TextView
+                android:id="@+id/teksMatkul"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tekskode"
+                android:layout_marginTop="20sp"
+                android:background="@color/grey"
+                android:text="Matakuliah"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editnama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editkode"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/teksMatkul" />
+
+            <TextView
+                android:id="@+id/teksks"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/teksMatkul"
+                android:layout_marginTop="20sp"
+                android:background="@color/grey"
+                android:text="Jumlah SKS"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editsks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editnama"
+                android:layout_toRightOf="@+id/teksMatkul" />
+
+            <TextView
+                android:id="@+id/teksnilaiAngka"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/teksks"
+                android:layout_marginTop="20sp"
+                android:background="@color/grey"
+                android:text="N.Angka"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editalamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editsks"
+                android:layout_toRightOf="@+id/teksnilaiAngka" />
+
+            <TextView
+                android:id="@+id/teksnilaihuruf"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/teksnilaiAngka"
+                android:layout_marginTop="20sp"
+                android:background="@color/grey"
+                android:text="N.Huruf"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editKota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editalamat"
+                android:layout_toRightOf="@+id/teksnilaihuruf" />
+
+
+            <TextView
+                android:id="@+id/tekspredikat"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/teksnilaihuruf"
+                android:layout_marginTop="20sp"
+                android:background="@color/grey"
+                android:text="Predikat"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editpredikat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editKota"
+                android:layout_toRightOf="@+id/tekspredikat" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/tombolupdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/teksks"
+            android:text="update" />
+
+        <Button
+            android:id="@+id/tombolview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/teksks"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/save"
+            android:text="view" />
+
+        <Button
+            android:id="@+id/tomboldelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/teksks"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/save"
+            android:text="delete" />
+
+    </LinearLayout>
+
+</LinearLayout>

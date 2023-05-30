@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+    android:padding="5dp"
+             android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/rela01"
+        android:layout_width="match_parent"
+        android:background="@color/purple_200"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/kodemtkl"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:hint="kode mtkl"
+            android:textColor="@color/white" />
+        <TextView
+            android:id="@+id/namamtkl"
+            android:layout_width="90dp"
+            android:hint="nama mtkl"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@+id/kodemtkl"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/sksmtkl"
+            android:layout_width="70dp"
+            android:hint="sks mtkl"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@+id/namamtkl"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/alamatmtkl"
+            android:layout_width="70dp"
+            android:hint="alamat mtkl"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@+id/sksmtkl"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/kotamtkl"
+            android:layout_width="60dp"
+            android:hint="kota mtkl"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@+id/alamatmtkl"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/predikatmtkl"
+            android:layout_width="40dp"
+            android:hint="predikat"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@+id/kotamtkl"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
